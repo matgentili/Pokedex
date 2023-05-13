@@ -14,6 +14,8 @@
 		7EDD464F2A0FCB5E006FFDFD /* PokedexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD464E2A0FCB5E006FFDFD /* PokedexTests.swift */; };
 		7EDD46592A0FCB5E006FFDFD /* PokedexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD46582A0FCB5E006FFDFD /* PokedexUITests.swift */; };
 		7EDD465B2A0FCB5E006FFDFD /* PokedexUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD465A2A0FCB5E006FFDFD /* PokedexUITestsLaunchTests.swift */; };
+		7EDD46692A0FCC61006FFDFD /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 7EDD46682A0FCC61006FFDFD /* ComposableArchitecture */; };
+		7EDD466C2A0FD11D006FFDFD /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD466B2A0FD11D006FFDFD /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		7EDD46542A0FCB5E006FFDFD /* PokedexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokedexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDD46582A0FCB5E006FFDFD /* PokedexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexUITests.swift; sourceTree = "<group>"; };
 		7EDD465A2A0FCB5E006FFDFD /* PokedexUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7EDD466B2A0FD11D006FFDFD /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EDD46692A0FCC61006FFDFD /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +98,7 @@
 		7EDD463C2A0FCB5D006FFDFD /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				7EDD466A2A0FD111006FFDFD /* Splash */,
 				7EDD463D2A0FCB5D006FFDFD /* PokedexApp.swift */,
 				7EDD463F2A0FCB5D006FFDFD /* ContentView.swift */,
 				7EDD46412A0FCB5E006FFDFD /* Assets.xcassets */,
@@ -127,6 +132,14 @@
 			path = PokedexUITests;
 			sourceTree = "<group>";
 		};
+		7EDD466A2A0FD111006FFDFD /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				7EDD466B2A0FD11D006FFDFD /* SplashScreen.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +156,9 @@
 			dependencies = (
 			);
 			name = Pokedex;
+			packageProductDependencies = (
+				7EDD46682A0FCC61006FFDFD /* ComposableArchitecture */,
+			);
 			productName = Pokedex;
 			productReference = 7EDD463A2A0FCB5D006FFDFD /* Pokedex.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +231,9 @@
 				Base,
 			);
 			mainGroup = 7EDD46312A0FCB5D006FFDFD;
+			packageReferences = (
+				7EDD46672A0FCC61006FFDFD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 7EDD463B2A0FCB5D006FFDFD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EDD466C2A0FD11D006FFDFD /* SplashScreen.swift in Sources */,
 				7EDD46402A0FCB5D006FFDFD /* ContentView.swift in Sources */,
 				7EDD463E2A0FCB5D006FFDFD /* PokedexApp.swift in Sources */,
 			);
@@ -583,6 +603,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7EDD46672A0FCC61006FFDFD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.53.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7EDD46682A0FCC61006FFDFD /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EDD46672A0FCC61006FFDFD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7EDD46322A0FCB5D006FFDFD /* Project object */;
 }
