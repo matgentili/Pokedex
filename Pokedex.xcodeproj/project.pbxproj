@@ -16,6 +16,8 @@
 		7EDD465B2A0FCB5E006FFDFD /* PokedexUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD465A2A0FCB5E006FFDFD /* PokedexUITestsLaunchTests.swift */; };
 		7EDD46692A0FCC61006FFDFD /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 7EDD46682A0FCC61006FFDFD /* ComposableArchitecture */; };
 		7EDD466C2A0FD11D006FFDFD /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD466B2A0FD11D006FFDFD /* SplashScreen.swift */; };
+		7EDD466F2A0FD6DC006FFDFD /* PokemonAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 7EDD466E2A0FD6DC006FFDFD /* PokemonAPI */; };
+		7EDD46712A0FD713006FFDFD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD46702A0FD713006FFDFD /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 		7EDD46582A0FCB5E006FFDFD /* PokedexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexUITests.swift; sourceTree = "<group>"; };
 		7EDD465A2A0FCB5E006FFDFD /* PokedexUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7EDD466B2A0FD11D006FFDFD /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		7EDD46702A0FD713006FFDFD /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EDD46692A0FCC61006FFDFD /* ComposableArchitecture in Frameworks */,
+				7EDD466F2A0FD6DC006FFDFD /* PokemonAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +107,7 @@
 				7EDD463F2A0FCB5D006FFDFD /* ContentView.swift */,
 				7EDD46412A0FCB5E006FFDFD /* Assets.xcassets */,
 				7EDD46432A0FCB5E006FFDFD /* Preview Content */,
+				7EDD46702A0FD713006FFDFD /* ViewModel.swift */,
 			);
 			path = Pokedex;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			name = Pokedex;
 			packageProductDependencies = (
 				7EDD46682A0FCC61006FFDFD /* ComposableArchitecture */,
+				7EDD466E2A0FD6DC006FFDFD /* PokemonAPI */,
 			);
 			productName = Pokedex;
 			productReference = 7EDD463A2A0FCB5D006FFDFD /* Pokedex.app */;
@@ -233,6 +239,7 @@
 			mainGroup = 7EDD46312A0FCB5D006FFDFD;
 			packageReferences = (
 				7EDD46672A0FCC61006FFDFD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				7EDD466D2A0FD6DC006FFDFD /* XCRemoteSwiftPackageReference "PokemonAPI" */,
 			);
 			productRefGroup = 7EDD463B2A0FCB5D006FFDFD /* Products */;
 			projectDirPath = "";
@@ -278,6 +285,7 @@
 			files = (
 				7EDD466C2A0FD11D006FFDFD /* SplashScreen.swift in Sources */,
 				7EDD46402A0FCB5D006FFDFD /* ContentView.swift in Sources */,
+				7EDD46712A0FD713006FFDFD /* ViewModel.swift in Sources */,
 				7EDD463E2A0FCB5D006FFDFD /* PokedexApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,6 +621,14 @@
 				minimumVersion = 0.53.0;
 			};
 		};
+		7EDD466D2A0FD6DC006FFDFD /* XCRemoteSwiftPackageReference "PokemonAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kinkofer/PokemonAPI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -620,6 +636,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7EDD46672A0FCC61006FFDFD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		7EDD466E2A0FD6DC006FFDFD /* PokemonAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EDD466D2A0FD6DC006FFDFD /* XCRemoteSwiftPackageReference "PokemonAPI" */;
+			productName = PokemonAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -10,6 +10,7 @@ import SwiftUI
 struct SplashScreen: View {
     
     @State private var isScaled = false
+    @StateObject var vm = ViewModel()
     
     var body: some View {
         Image("logo")
